@@ -37,3 +37,16 @@ These public Kenyan listings informed the October 2026 guide points; different s
 ## Run locally
 
 Open `index.html` directly, or use any static web server. The site has no build step or runtime dependencies.
+
+## Search engine setup and launch
+
+The site now includes a crawlable `robots.txt`, a one-page `sitemap.xml`, SEO/social metadata, a favicon, and Organization structured data with the shop phone and email. The crawl files use `https://YOUR-PUBLIC-DOMAIN.example` because the public domain has not been provided. Before deployment, replace that placeholder everywhere with the exact live HTTPS domain; then add matching canonical and `og:url` metadata to `index.html`. Do not submit the placeholder sitemap.
+
+After the site is live at the domain root:
+
+1. Verify the domain property in Google Search Console and submit `/sitemap.xml`. Use URL Inspection to request indexing after publishing. Crawling and ranking take time and are controlled by search engines; these changes cannot guarantee a traffic volume or ranking.
+2. Create or claim a Google Business Profile only with the real business name, phone, public address/service area, hours, and photos. Keep the site and profile details consistent. The shop address was not supplied, so none has been invented in the structured data.
+3. Add real shop social-profile URLs after those accounts exist, and replace stock photo assets with clear original product and store photos with accurate alt text.
+4. Keep stock, prices, battery claims, hours and offers current. Build one useful, distinct page per real service or product category when there is enough unique information; avoid thin duplicate pages and fake reviews.
+
+Google's guidance: [Sitemaps](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview), [robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro), [snippets](https://developers.google.com/search/docs/appearance/snippet), and [LocalBusiness structured data](https://developers.google.com/search/docs/appearance/structured-data/local-business).

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace the placeholder with the real public website domain after launch.
+Sitemap: https://YOUR-PUBLIC-DOMAIN.example/sitemap.xml
